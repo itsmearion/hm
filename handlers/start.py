@@ -16,7 +16,7 @@ def register_start_handler(app: Client):
         [
             [
                 InlineKeyboardButton("Format Order", callback_data="show_format_menu"),
-                InlineKeyboardButton("Owner", url="https://t.me/mourpals")  # Ganti URL jika perlu
+                InlineKeyboardButton("Owner", url="https://t.me/ampuv")  # Ganti URL jika perlu
             ]
         ]
     )

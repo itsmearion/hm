@@ -11,8 +11,13 @@ def register_start_handler(app: Client):
 
         # Menampilkan tombol "Format Order"
         await message.reply_text(
-            "Klik tombol di bawah untuk melihat format order:",
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Format Order", callback_data="show_format_menu")]]
-            )
-        )
+    "Klik tombol di bawah untuk melihat format order atau menghubungi owner:",
+    reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("Format Order", callback_data="show_format_menu"),
+                InlineKeyboardButton("Owner", url="https://t.me/mourpals")  # Ganti URL jika perlu
+            ]
+        ]
+    )
+)
